@@ -1,7 +1,7 @@
 version: "26.0.0"
 services:
   nodejs-kubernetes:
-    image: local-nodejs-kubernetes
+    image: local-nodejs-kubernetes:1
     environment:
       PASSWORD_HASH: paymentC103V1TestEnv123***
       ACCESS_TOKEN_SECRET_KEY: 9ec569f2488d0303fe54aaeabcb0ffeefca54e7f466eb99b92db7e1df3eecca7

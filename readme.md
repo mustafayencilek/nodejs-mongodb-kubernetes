@@ -76,3 +76,13 @@ eval $(minikube docker-env)
 minikube tunnel
 9. Visit localhost:8099/api-docs in your browser.
 By following these steps, you can successfully run your Node.js application in a Kubernetes environment.
+
+## Testing
+
+To test the application:
+1. Set the value of NODE_ENV to "test" in the .env file:
+NODE_ENV=test
+2. Execute the following command in your terminal:
+npm run test
+3. These steps will configure the environment for testing and run the test suite.
+

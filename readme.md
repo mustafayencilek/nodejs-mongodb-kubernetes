@@ -56,8 +56,10 @@ The project includes the following packages:
 2. Clone the project to your local directory.
 3. Navigate to the project directory in your terminal and run `npm install` to install dependencies.
 4. Create a `.env` file and define the necessary environment variables.
-5. Send requests to the required endpoints using tools like Postman.
-6. Visit localhost:3000/api-docs in your browser to view and test the API documentation using Swagger.
+5. Execute the following command in your terminal:
+npm run start
+6. Send requests to the required endpoints using tools like Postman.
+7. Visit localhost:3000/api-docs in your browser to view and test the API documentation using Swagger.
 
 ## Running in Kubernetes
 

@@ -1,0 +1,27 @@
+version: "26.0.0"
+services:
+  nodejs-kubernetes:
+    image: local-nodejs-kubernetes
+    environment:
+      PASSWORD_HASH: paymentC103V1TestEnv123***
+      ACCESS_TOKEN_SECRET_KEY: 9ec569f2488d0303fe54aaeabcb0ffeefca54e7f466eb99b92db7e1df3eecca7
+      REFRESH_TOKEN_SECRET_KEY: 9ec569f2488d0303fe54aaeabcb0ffeefca54e7f466eb99b92db7e1df3eecca7paymentC103V1TestEnv123***
+      NODE_ENV: testssda
+      PORT: 80
+      MONGO_DB_URL: mongodb://nodejs-kubernetes-mongodb:27017/nodejs-kubernetes
+    ports:
+      - 8099:80
+    depends_on:
+      - nodejs-kubernetes-mongodb
+
+  nodejs-kubernetes-mongodb:
+    image: mongo:4.2
+    environment:
+      MONGO_DATA_DIR: /data/db
+      MONGO_LOG_DIR: /dev/null
+    volumes:
+      - nodejs-kubernetes-mongodb-volume:/data/db
+    ports:
+      - 23017:27017
+volumes:
+  nodejs-kubernetes-mongodb-volume:

@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+
+# dotenv environment variables file
+.env
+
+# production build
+/build
+
+# macOS
+.DS_Store
+
+# logs
+/logs
+
+# yarn
+.yarn/*
+
+# npm
+*.log
+npm-debug.log*
+
+# user-specific files
+.npmrc
+.yarnrc

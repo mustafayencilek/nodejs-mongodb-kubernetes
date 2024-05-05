@@ -57,9 +57,9 @@ The project includes the following packages:
 3. Navigate to the project directory in your terminal and run `npm install` to install dependencies.
 4. Create a `.env` file and define the necessary environment variables.
 5. Execute the following command in your terminal:
-npm run start
+`npm run start`
 6. Send requests to the required endpoints using tools like Postman.
-7. Visit localhost:3000/api-docs in your browser to view and test the API documentation using Swagger.
+7. Visit `localhost:3000/api-docs` in your browser to view and test the API documentation using Swagger.
 
 ## Running in Kubernetes
 
@@ -67,24 +67,24 @@ npm run start
 2. Enable Kubernetes from the Docker interface.
 3. Refer to the [Minikube documentation](https://minikube.sigs.k8s.io/docs/start/) and [Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/) for instructions on installing Minikube and kubectl.
 4. Build the Docker image:
-docker build -t local-nodejs-kubernetes:1 .
+`docker build -t local-nodejs-kubernetes:1 .`
 5. Start containers with Docker Compose:
-docker-compose up --build -d
+`docker-compose up --build -d`
 6. Apply Kubernetes resources:
-kubectl apply -f deployments
+`kubectl apply -f deployments`
 7. Set up Minikube Docker environment:
-eval $(minikube docker-env)
+`eval $(minikube docker-env)`
 8. Start Minikube tunnel:
-minikube tunnel
-9. Visit localhost:8099/api-docs in your browser.
+`minikube tunnel`
+9. Send requests to the required endpoints (`localhost:8099/users` or `localhost:8099/transactions`) using tools like Postman.
 By following these steps, you can successfully run your Node.js application in a Kubernetes environment.
 
 ## Testing
 
 To test the application:
 1. Set the value of NODE_ENV to "test" in the .env file:
-NODE_ENV=test
+`NODE_ENV=test`
 2. Execute the following command in your terminal:
-npm run test
+`npm run test`
 3. These steps will configure the environment for testing and run the test suite.
 

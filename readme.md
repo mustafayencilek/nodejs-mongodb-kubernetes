@@ -16,7 +16,6 @@ The project includes the following packages:
 
 - **crypto-js**: Used for encrypting passwords.
 - **dotenv**: Used for loading environment variables.
-- **express-fileupload**: Used for file upload operations.
 - **helmet**: Used for security measures.
 - **http-status**: Used for facilitating the use of HTTP status codes.
 - **joi**: Used for data validation.
